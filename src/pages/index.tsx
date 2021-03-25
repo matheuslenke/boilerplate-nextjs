@@ -1,15 +1,7 @@
-import Head from 'next/head'
+import Main from 'components/Main'
 
 const Home: React.FC = () => {
-  return (
-    <div>
-      <Head>
-        <title>React avançado</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <h1>NextJS</h1>
-    </div>
-  )
+  return <Main />
 }
 
 export default Home
