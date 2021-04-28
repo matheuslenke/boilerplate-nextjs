@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "09:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@typescript-eslint/parser"
+    versions:
+    - 4.19.0
+    - 4.20.0
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.13.13
+  - dependency-name: eslint-plugin-react
+    versions:
+    - 7.23.1
+  - dependency-name: "@typescript-eslint/eslint-plugin"
+    versions:
+    - 4.19.0
+  - dependency-name: husky
+    versions:
+    - 5.2.0
